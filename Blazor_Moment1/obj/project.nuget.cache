@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g/P/O23tTvMOJbRMxxOSklhraSHuvY1oXCVQcx7TqcwvwSWedFtA60HbPS3jJHA/us4awhKi6bChu8S209QQYw==",
+  "success": true,
+  "projectFilePath": "/Users/asaberglund/Projects/Moment1_blazor/Blazor_Moment1/Blazor_Moment1.csproj",
+  "expectedPackageFiles": [
+    "/Users/asaberglund/.nuget/packages/westwind.aspnetcore.livereload/0.3.6/westwind.aspnetcore.livereload.0.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}

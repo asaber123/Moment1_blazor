@@ -1,0 +1,50 @@
+﻿@page "/convert"
+
+<PageTitle>Konvertering</PageTitle>
+
+<h1>Konvertering</h1>
+
+<h2>Konvertera meter till feet</h2>
+
+<label for="meter">Meter:</label>
+<input type="number" class="form-control" @bind="meter" />
+<br />
+<button class="convert-button" @onclick="Convert">Konvertera</button>
+<br />
+<p>Andelen feet är: @feet</p>
+
+
+
+<h2>Konvertera km/hour till miles/hour</h2>
+
+<label for="kph">Km/h:</label>
+<input type="number" class="form-control" @bind="kph" />
+<br />
+<button class="convert-button" @onclick="ConvertToMph">Konvertera</button>
+<br />
+<p>Andelen mile/hour är: @roundMph</p>
+
+
+
+@code {
+    private double feet;
+    private double meter;
+
+
+    private void Convert()
+    {
+        feet = meter * 3.28084;
+    }
+
+
+    private double kph;
+    private double roundMph;
+
+
+    private void ConvertToMph()
+    {
+        mph = kph / 1.609344;
+        roundMph= Math.Round(mph)
+    }
+}
+
